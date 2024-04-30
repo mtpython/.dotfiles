@@ -1,0 +1,4 @@
+[submodule "nvim"]
+	path = nvim/.config/nvim
+    url = git@github.com:mtpython/.config-nvim.git
+    branch = main

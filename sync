@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+STOW_DIRS="zsh,wezterm,nvim"
+
+for dir in $(echo $STOW_DIRS | sed "s/,/ /g")
+do
+    echo "stow $dir"
+    stow -D $dir
+    stow $dir
+done
